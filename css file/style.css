@@ -5,6 +5,10 @@
     font-family:sans-serif;
     --col:rgb(24, 116, 244);
     --col1:rgb(19, 69, 185);
+    
+    }
+    body{
+        background-color: #eaebed;
     }
     /*heqading*/
     .heading
@@ -95,12 +99,10 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     
-        
-        
-       
-        
-    
-    }
+   }
+   .heading{
+    width: 100vw;
+   }
 }
    
     
