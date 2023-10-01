@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css file/style.css" />
+    <link rel="stylesheet" href="./css file/style2.css" />
+    <title>CSS Notes</title>
+  </head>
+  <body>
+    <div class="heading">Learn CSS</div>
+    <div class="contain">
+      <header>
+        <nav>
+          <!--css Tutorials-->
+
+          <div class="subheader">
+            <div class="innersubhead">CSS Tutorials</div>
+          </div>
+          <ul>
+            <li><a href="#intro">CSS Introduction</a></li>
+            <li><a href="#what">What is CSS?</a></li>
+            <li><a href="#syntax">CSS Syntax</a></li>
+            <li><a href="#selector">CSS Selectors</a></li>
+            <li><a href="#add">How To Add CSS</a></li>
+            <li><a href="#inline">Inline CSS</a></li>
+            <li><a href="#internal">Internal CSS</a></li>
+            <li><a href="#external">External CSS</a></li>
+            <li><a href="#cmt">Comment In CSS</a></li>
+          </ul>
+          <!--CSS properties-->
+          <div class="subheader">
+            <div class="innersubhead">CSS Properties</div>
+          </div>
+          <ul>
+            <li><a href="#bg">Background</a></li>
+            <li><a href="#bgc">Background-color</a></li>
+            <li><a href="#bgi">Background-image</a></li>
+            <li><a href="#bgr">Background-repeat</a></li>
+            <li><a href="#bga">Background-attachment</a></li>
+            <li><a href="#bgp">Background-position</a></li>
+
+            <li><a href="#border">Border</a></li>
+            <li><a href="#bw">Border-width</a></li>
+            <li><a href="#bc">Border-color</a></li>
+            <li><a href="#br">Border-radious</a></li>
+            <li><a href="#bs">Border-style</a></li>
+
+            
+            <li><a href="#hw">Height & Width</a></li>
+            <li><a href="#box">Box Model</a></li>
+            <li><a href="#font">Font</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="link">Links</a></li>
+            <li><a href="#list">Lists</a></li>
+            <li><a href="#margin">margin</a></li>
+            <li><a href="#padding">Padding</a></li>
+            <li><a href="#position">Position</a></li>
+            <li><a href="unit">Units</a></li>
+            <li><a href="#ib">Inline-Block</a></li>
+            <li><a href="#z">Z-Index</a></li>
+            <li><a href="#color">Color</a></li>
+          </ul>
+
+          <!--css Desogn layout-->
+
+          <div class="subheader">
+            <div class="innersubhead">CSS Designs</div>
+          </div>
+          <ul>
+            <li><a href="#flex">CSS FlexBox</a></li>
+            <li><a href="#grid">CSS Grid</a></li>
+            
+          </ul>
+
+        </nav>
+        <main>
+          <section id="intro">
+            <br />
+            <h2>&nbsp; CSS Tutorials</h2>
+            <hr />
+            <p>
+              CSS tutorial or CSS 3 tutorial provides basic and advanced
+              concepts of CSS technology. Our CSS tutorial is developed for
+              beginners and professionals. The major points of CSS are given
+              below: 
+              <ul>
+                <li>CSS stands for Cascading Style Sheet. CSS is used to design
+                    HTML tags</li>
+                <li>CSS is a widely used language on the web. HTML, CSS and
+                    JavaScript are used for web designing.</li>
+                <li>CSS is a widely used language on the web. HTML, CSS and
+                    JavaScript are used for web designing. It helps the web designers
+                    to apply style on HTML tags.</li>
+              </ul>
+            </p>
+            
+          </section>
+          <section id="what">
+            <br>
+            <h2>&nbsp; What is CSS</h2><hr>
+            <p>
+                CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL. <br> <br>
+
+                CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and user interfaces for many mobile applications.
+
+
+            </p>
+            <h2>&nbsp; What does CSS do</h2><hr>
+            <ul>
+                <li>You can add new looks to your old HTML Documents.</li>
+                <li>You can Completely change the look of your website with only few changes in css code.</li>
+            </ul>
+            <h2>&nbsp; Why use CSS</h2><hr>
+            <p>these are the three major benifits Of CSS</p>
+            <ul>
+                <li><h4>Solve a big problem </h4><br> Before CSS, tags like font, color, background style, element alignments, border and size had to be repeated on every web page. This was a very long process. For example: If you are developing a large website where fonts and color information are added on every single page, it will be become a long and expensive process. CSS was created to solve this problem. It was a W3C recommendation</problem:br></h4></li>
+                <li><h4>Saves a lot of Time</h4> <br> CSS style definitions are saved in external CSS files so it is possible to change the entire website by changing just one file. </li>
+                <li> <h4>Provide more attributes</h4>  <br> CSS style definitions are saved in external CSS files so it is possible to change the entire website by changing just one file</li>
+            </ul>
+
+          </section>
+
+          <section id="syntax">
+            <h2>&nbsp; CSS Syntax</h2><hr>
+            <p>A CSS rule set contains a Selectors and Declaration block</p>
+            <div class="img">
+                <img src="./media/css-syntax.png" alt="mig1" width="400px" height="200px">
+            </div>
+            <p>
+                <h4>Selectors:</h4> <br>Selector indicates the HTML element you want to style. It could be any tag like &lt;title&gt;&lt;h1&gt; etc. <br><br>
+                <h4>Declaration Block:</h4> <br>The declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations:
+                <ul>
+                    <li>color:yellow;</li>
+                    <li>font-size:11px;</li>
+                </ul>
+                <br><br>
+                <h4>Property:</h4> <br>A Property is a type of attribute of HTML element. It could be color, border etc. <br> <br>
+                <h4>Values:</h4><br>Values are assigned to CSS properties. In the above example, value "yellow" is assigned to color property.
+            </p>
+            <div class="ex">
+                Selector{Property1: value1; Property2: value2; ..........;} 
+            </div>
+            
+          </section>
+
+          <section id="selector">
+            
+            <h2>CSS Selectors</h2><hr><br>
+
+            <p>CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.</p>
+            <ul>
+                <li>element Selector</li>
+                <li>Id Selector</li>
+                <li>class Selector</li>
+                <li>univesal Selector</li>
+                <li>group Selector</li>
+            </ul>
+            <br>
+            <h4>Element Selector:</h4>
+            <div class="ex">
+                <xmp>
+                    p {
+                        text-align: center;
+                        color: red;
+                      }
+                </xmp>
+            </div><br>
+            <h4>Id selectors:</h4>
+            <div class="ex">
+                <xmp>
+                    #para1 {
+                        text-align: center;
+                        color: red;
+                      }
+                </xmp>
+            </div><br>
+            <h4>Class Selectors:</h4>
+            <div class="ex">
+                <xmp>
+                    .center {
+                        text-align: center;
+                        color: red;
+                      }
+                </xmp>
+            </div><br>
+            <h4>Universal Selector:</h4>
+            <div class="ex">
+                <xmp>
+                    * {
+                        text-align: center;
+                        color: blue;
+                      }
+                </xmp>
+            </div><br>
+            <h4>group Selector</h4>
+            <div class="ex">
+                <xmp>
+                    h1, h2, p {
+                        text-align: center;
+                        color: red;
+                      }
+                </xmp>
+            </div>
+
+         </section>
+         <section id="add">
+            <br><br>
+            <h2>&nbsp; How to add CSS</h2> <hr>
+            <p>CSS is added to HTML pages to format the document according to information in the style sheet. There are three ways to insert CSS in HTML documents.</p>
+            <ul>
+                <li>Inline CSS</li>
+                <li>Internal CSS</li>
+                <li>External CSS</li>
+            </ul>
+
+         </section>
+         <section id="inline">
+            <br>
+            <h2>&nbsp; Inline CSS:</h2>
+            <p>
+                Inline CSS is used to apply CSS on a single line or element.
+                <br><br>
+                For example: <br>
+                <div class="ex">
+                    <xmp>
+                        <p style="color:blue">Hello CSS</p> 
+                    </xmp>
+                </div>
+            </p>
+
+  
+         </section>
+         <section id="internal">
+            
+            <h2>&nbsp; Internal CSS:</h2>
+            <p>
+                Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html. <br><br>
+
+                For example:
+            </p>
+            
+            <div class="ex">
+                <xmp>
+                    <style>  
+                        p{color:blue}  
+                        </style>
+                </xmp>
+            </div>
+         </section>
+         <section id="external">
+            <h2>&nbsp; External CSS:</h2>
+            <br>
+            <p>
+                External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css file. Its extension must be .css for example style.css. <br>
+
+                For example:
+            </p>
+            <div class="ex">
+                <xmp>
+                    p{color:blue} 
+                </xmp>
+            </div>
+            <p>
+                You need to link this style.css file to your html pages like this:
+            </p>
+            <div class="ex">
+                <xmp><link rel="stylesheet" type="text/css" href="style.css"></xmp>
+            </div>
+            <p>The link tag must be used inside head section of html.</p>
+         </section>
+         <section id="cmt">
+            <h2>&nbsp; CSS Comment</h2> <hr>
+            <p>
+                CSS comments are generally written to explain your code. It is very helpful for the users who reads your code so that they can easily understand the code. <br> <br>
+
+                Comments are ignored by browsers. <br> <br>
+
+                Comments are single or multiple lines statement and written within /*............*/ .
+            </p>
+            <div class="ex">
+                <xmp>
+                    /* This is a single-line comment */  
+                    text-align: center; 
+
+                    /* This is  
+                     a multi-line  
+                     comment */ 
+
+                </xmp>
+            </div>
+
+         </section>
+
+         <section id="bg">
+          <h2>&nbsp; CSS Background</h2> <hr>
+          <p>
+            CSS background property is used to define the background effects on element. There are 5 CSS background properties that affects the HTML elements:
+          </p>
+          <ul>
+            <li>Background-color</li>
+            <li>Background-image</li>
+            <li>Background-repeat</li>
+            <li>Background-attachment</li>
+            <li>Background-position</li>
+          </ul>
+          
+         </section>
+         <section id="bgc">
+          <h2>Background-color</h2>
+          <p>
+            The background-color property is used to specify the background color of the element.
+            <br><br>
+            You can set the background color like this:
+          </p>
+          <div class="ex">
+            <xmp>
+              body {
+                background-color: lightblue;
+              }
+            </xmp>
+          </div>
+        </section>
+        
+        <section id="bgi">
+          <h2>Background-image</h2>
+          <p>
+            The background-image property specifies an image to use as the background of an element.
+            <br><br>
+            By default, the image is repeated so it covers the entire element.
+          </p>
+          <div class="ex">
+            <xmp>
+              body {
+                background-image: url("paper.gif");
+              }
+            </xmp>
+          </div>
+        </section>
+        <section id="bgr">
+          <h2>Background-repeat</h2>
+          <p>
+            By default, the background-image property repeats an image both horizontally and vertically.
+            <br><br>
+            Some images should be repeated only horizontally or vertically, or they will look strange, like this:
+          </p>
+          <div class="ex">
+            <xmp>
+              body {
+                background-image: url("gradient_bg.png");
+                background-repeat: repeat-x/ repeat-y/ no-repeat;
+              }
+            </xmp>
+          </div>
+        </section>
+        <section id="bga">
+          <h2>Background-attachment</h2>
+          <p>
+            The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):
+          </p>
+          <div class="ex">
+            <xmp>
+              body{
+                background-attachment: fixed /scroll;
+              }
+            </xmp>
+          </div>
+        </section>
+        <section id="bgp">
+          <h2>Background-position</h2>
+          <p>The background-position property is used to define the initial position of the background image. By default, the background image is placed on the top-left of the webpage</p>
+          <div class="ex">
+            <xmp>
+              body{
+                background-position: center/top/bottom/left/right;
+              }
+            </xmp>
+          </div>
+        </section>
+        <section id="border">
+          <h2>&nbsp; CSS Border</h2><hr>
+          <br>
+          <p>
+            CSS border is a property used to define the border around an element in a web page. It allows you to control the border's style, color, and width. The border property can be applied to various HTML elements, such as divs, paragraphs, buttons, and more, to create visual separation and distinction between elements on a web page. <br> <br>
+
+            The border property is shorthand for specifying the following individual border properties:
+          </p>
+        </section>
+        <section id="bw">
+          <h2>Border-width</h2>
+          <p>
+            Specifies the thickness or width of the border. It can be set in various units like pixels (px), ems (em), or percentages (%). For example
+          </p>
+          <div class="ex">
+            <xmp>
+              border-width: 2px;
+            </xmp>
+          </div>
+        </section>
+        <section id="bc">
+          <h2>Border-color</h2>
+          <p>
+            Specifies the color of the border. You can use color names, hexadecimal values, RGB, RGBA, HSL, or HSLA values to define the color. For example:
+          </p>
+          <div class="ex">
+            <xmp>
+              border-color: red;
+            </xmp>
+          </div>
+        </section>
+        <section id="br">
+          <h2>Border-radious</h2>
+          <p>
+            Sets the radius of the border corners to create rounded corners. It takes one or more values, which can be in pixels or percentages, to specify the radius for each corner individually or all corners at once. For example:
+          </p>
+          <div class="ex">
+            <xmp>
+              border-radius: 10px;
+            </xmp>
+          </div>
+        </section>
+        <section id="bs">
+          <h2>Border-style</h2>
+          <p>
+            The border-style property specifies what kind of border to display. <br>
+            These are Some Styles: <br><br>
+          </p>
+          <ul>
+            <li>dotted - Defines a dotted border</li>
+            <li>dashed - Defines a dashed border</li>
+            <li>solid - Defines a solid border</li>
+            <li>double - Defines a double border</li>
+            <li>groove - Defines a 3D grooved border. The effect  depends on the border-color value</li>
+            <li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+            <li>none - Defines no border</li>
+            <li>hidden - Defines a hidden border</li>
+          </ul>
+          <div class="ex">
+            <xmp>
+              p.dotted {border-style: dotted;}
+              p.dashed {border-style: dashed;}
+              p.solid {border-style: solid;}
+              p.double {border-style: double;}
+              p.groove {border-style: groove;}
+              p.ridge {border-style: ridge;}
+              p.inset {border-style: inset;}
+              p.outset {border-style: outset;}
+              p.none {border-style: none;}
+              p.hidden {border-style: hidden;}
+              p.mix {border-style: dotted dashed solid double;}
+            </xmp>
+          </div>
+        </section>
+        <section id="hw">
+          <h2>&nbsp; CSS Height & Width</h2> <hr>
+          <br>
+          <p>
+            The CSS height and width properties are used to set the height and width of an element. <br><br>
+
+            The CSS max-width property is used to set the maximum width of an element. <br><br>
+            The height and width properties are used to set the height and width of an element. <br><br>
+
+            The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+          </p><br>
+          <h4>CSS Height And width values</h4> <br>
+          The height and width properties may have the following values:
+          <ul>
+            <li>auto - This is default. The browser calculates the height and width</li>
+            <li>length - Defines the height/width in px, cm, etc.</li>
+            <li>% - Defines the height/width in percent of the containing block</li>
+            <li>initial - Sets the height/width to its default value</li>
+            <li>inherit - The height/width will be inherited from its parent value</li>
+          </ul>
+          <div class="ex">
+            <xmp>
+              div {
+                height: 200px;
+                width: 50%;
+                background-color: powderblue;
+              }
+            </xmp>
+          </div>
+
+        </section>
+        <section id="box">
+          <h2>&nbsp; CSS Box Model</h2><hr>
+          <p>
+            In CSS, the term "box model" is used when talking about design and layout.
+            <br> <br>
+            The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+          </p> <br>
+          <img src="./media/css-box-model-.png" alt="mig2" width="400px"> <br>
+          <div class="ex">
+            <xmp>
+              div {
+                width: 320px;
+                padding: 10px;
+                border: 5px solid gray;
+                margin: 0;
+              }
+            </xmp>
+           
+          </div>
+          <p>
+            Here we conclusion that: <br> 320px(width) <br>+ 20px (left + right padding) <br> +10px (left and right border) <br>+0px(left + right margin) <br>
+            <b>=350px</b>
+          </p>
+
+        </section>
+        <section id="font">
+          <h2>&nbsp; CSS Font</h2> <hr>
+          <br>
+          <p>
+            CSS (Cascading Style Sheets) provides a variety of properties for controlling the appearance and styling of text within HTML elements. These properties allow you to modify the font, size, color, spacing, alignment, decoration, and other visual aspects of text on a web page. Here's an explanation of some of the key CSS properties related to text:
+          </p>
+          <br>
+            <h4>font-family</h4> 
+            <p>This property specifies the font family for the text. You can define a specific font or a list of font choices, separated by commas. The browser will use the first available font in the list. For example:</p>
+            <div class="ex">
+              <xmp>
+                font-family: Arial, Helvetica, sans-serif;
+              </xmp>
+            </div>
+            <br>
+            <h4>font-size</h4> 
+            <p>This property sets the size of the text. You can specify the size in various units such as pixels (px), ems (em), percentages (%), or keywords like small, medium, large, etc. For example:</p>
+            <div class="ex">
+              <xmp>
+                font-size: 16px;
+              </xmp>
+            </div> <br>
+             
+            <h4>
+              font-weight
+            </h4>
+            <p>
+              It defines the thickness or weight of the text characters. Common values include normal, bold, bolder, and numeric values like 400 or 700 for more precise control. For example:
+            </p>
+            <div class="ex">
+              <xmp>
+                font-weight: bold;
+              </xmp>
+            </div>
+            <br>
+            <h4>
+              font-style
+            </h4>
+            <p>
+              : This property specifies whether the text is displayed in a normal, italic, or oblique style. Common values include normal, italic, and oblique. For example:
+            </p>
+            <div class="ex">
+              <xmp>
+                font-style: italic;
+              </xmp>
+            </div>
+            <br>
+            <h4>
+              color
+            </h4>
+            <p>
+              It sets the color of the text. You can use color names, hexadecimal values, RGB, RGBA, HSL, or HSLA values to define the color. For example:
+            </p>
+            <div class="ex">
+              <xmp>
+                color: #ff0000; /* Red color */
+              </xmp>
+            </div>
+            <br>
+            
+        </section>
+        <section id="text">
+          <h2>&nbsp; CSS Text(Text-Formatting)</h2><hr>
+          <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified.</p> <br>
+
+          <h4>
+            text-color
+          </h4>
+          <p>The color property is used to set color of the text.The color is specified by:</p>
+          <ul>
+            <li>color name: like "red"</li>
+            <li>Hex value: like "#f0000"</li>
+            <li>rgb value: like rgb(255,0,0)"</li>
+          </ul>
+          <div class="ex">
+            <xmp>
+              body {
+                color: blue;
+              }
+              
+              h1 {
+                color: rgb(0,255,0);
+              }
+            </xmp>
+          </div>
+          <br>
+          <h4>
+            text-align
+          </h4>
+          <p>
+            This property controls the horizontal alignment of the text within its container. Common values include left, right, center, and justify. For example:
+          </p>
+          <div class="ex">
+            <xmp>
+              text-align: center;
+            </xmp>
+          </div>
+          <br>
+          <h4>
+            text-decoration
+          </h4>
+          <p>
+            This property adds visual effects to the text, such as underlines, overlines, line-through, and blink. For example
+          </p>
+          <div class="ex">
+            <xmp>
+              text-decoration: underline;
+            </xmp>
+          </div>
+          <br>
+          <h4>
+            text-shadow
+          </h4>
+          <p>
+            The text-shadow property adds shadow to text.
+            <br>
+            In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+          </p>
+          <div class="ex">
+            <xmp>
+              h1 {
+                text-shadow: 2px 2px 5px red;
+              }
+            </xmp>
+          </div>
+
+
+        </section>
+        <section id="links">
+          <h2>&nbsp; CSS Links</h2> <hr>
+          <p>Links can be styled with any CSS property (e.g. color, font-family, background, etc.). <br>n addition, links can be styled differently depending on what state they are in. <br> The Four links states are:
+          </p>
+
+          <ul>
+            <li>a:link -normal,unvisited link</li>
+            <li>a:visited -a link the user has visited</li>
+            <li>a:hover -a link when the user mouses over it</li>
+            <li>a:a -link the moment it is clicked</li>
+          </ul>
+
+          <div class="ex">
+            <xmp>
+              /* unvisited link */
+              a:link {
+              color: red;
+              }
+
+             /* visited link */
+                a:visited {
+                color: green;
+                }
+
+             /* mouse over link */
+                a:hover {
+                color: hotpink;
+               }
+
+             /* selected link */
+                a:active {
+                color: blue;
+              }
+            </xmp>
+          </div>
+        </section>
+
+        <section id="list">
+
+          <h2>&nbsp; CSS Lists</h2> <hr>
+          <p>
+            There are various CSS properties that can be used to control lists. Lists can be classified as ordered lists and unordered lists. In ordered lists, marking of the list items is with alphabet and numbers, whereas in unordered lists, the list items are marked using bullets
+            <br>
+            there are three types o list-style
+            <ul>
+              <li>Order list</li>
+              <li>Unorder list</li>
+              <li>Description list</li>
+            </ul>
+          </p>
+          we can style the lists css. css list properties allows:
+          <ul>
+            <li>Set the distance between the text and the marker in the list</li>
+            <li>Specify an image for the marker instead of using the number or bullet point.</li>
+            <li>Control the marker appearance and shape.</li>
+            <li>Place the marker outside or inside the box that contains the list items.</li>
+            <li>Set the background colors to list items and lists.</li>
+          </ul>
+          <br>
+          <h4>list-style-type</h4>
+          <p>This property is responsible for controlling the appearance and shape of the marker.</p> <br>
+          <h4>list-style-image</h4>
+          <p> It sets an image for the marker instead of the number or a bullet point.</p> <br>
+          <h4>list-style-position</h4>
+          <p>It specifies the position of the marker.</p> <br>
+          <h4>list-style</h4>
+          <p>It is the shorthand property of the above properties</p> <br>
+          <h4>marker-offset</h4>
+          <p>It is used to specify the distance between the text and the marker. It is unsupported in IE6 or Netscape 7.</p><br>
+
+          <div class="ex">
+            <xmp>
+              <ol class="num">   
+                <li>one</li>   
+                <li>two</li>   
+                <li>three</li>   
+             </ol>   
+            </xmp>
+          </div>
+          <div class="ex">
+            <xmp>
+              <ul class="disc">   
+                <li>one</li>   
+                <li>two</li>   
+                <li>three</li>   
+             </ul>   
+            </xmp>
+          </div>
+          <div class="ex">
+            <xmp>
+              .num{  
+                list-style-type:decimal;        
+              }  
+              .disc{  
+                list-style-type:disc;   
+              }  
+            </xmp>
+          </div>
+
+
+        </section>
+        <section id="margin">
+          <h2>&nbsp; CSS Margin</h2><hr>
+          <p>
+            The CSS margin properties are used to create space around elements, outside of any defined borders.
+            <br>
+            With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+          </p>
+          <h4>margin - individual Sides</h4>
+          CSS has Properties for Specifying the margin for each side of an element: <br>
+          <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-lefyt</li>
+          </ul>
+          <br>
+          All the margin can have following values:
+          <ul>
+            <li>auto - the browser calculates the margi</li>
+            <li>length - specifies a margin in px, pt, cm, etc.</li>
+            <li>% - specifies a margin in % of the width of the containing element</li>
+            <li>inherit - specifies that the margin should be inherited from the parent element</li>
+          </ul>
+          <div class="ex">
+            
+             <xmp>
+              p {
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 150px;
+                margin-left: 80px;
+              }
+             </xmp>
+            
+          </div>
+        </section>
+        <section id="padding">
+          <h2>&nbsp; CSS Padding</h2><hr>
+          <p>
+            The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+            With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+          </p>
+          <h4>padding - Indivisuals sides</h4>
+          CSS has Properties for specifying the paddding for each side of an elements: <br>
+          <ul>
+          <li>padding-top</li>
+          <li>padding-right</li>
+          <li>padding-right</li>
+          <li>padding-bottom</li>
+        </ul> <br>
+        All the padding properties can have the following values:
+        <ul>
+          <li>length - specifies a padding in px, pt, cm, etc.</li>
+          <li>% - specifies a padding in % of the width of the containing element</li>
+          <li>inherit - specifies that the padding should be inherited from the parent element</li>
+        </ul>
+        <div class="ex">
+          <xmp>
+            div {
+              padding-top: 50px;
+              padding-right: 30px;
+              padding-bottom: 50px;
+              padding-left: 80px;
+            }
+          </xmp>
+        </div>
+        </section>
+        <section id="position">
+          <h2>&nbsp; CSS Position</h2><hr>
+          <p>
+            The position property specifies the type of positioning method used for an element.
+            <br>
+
+            There are five different position values:
+            
+          </p>
+          <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+          </ul>
+          <p>
+            Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+          </p>
+          br
+          <h4>position:static</h4>
+          <p>
+            HTML elements are positioned static by default. <br>
+
+           Static positioned elements are not affected by the top, bottom, left, and right properties. <br>
+
+           An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page: <br>
+           <div class="ex">
+            <xmp>
+              div.static {
+                position: static;
+                border: 3px solid #73AD21;
+              }
+            </xmp>
+           </div>
+          </p>
+          <br>
+          <h4>position:relative</h4>
+          <p>
+            An element with position: relative; is positioned relative to its normal position.
+
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+          </p> <br>
+          <div class="ex">
+            <xmp>
+              div.relative {
+                position: relative;
+                left: 30px;
+                border: 3px solid #73AD21;
+              }
+            </xmp> <br>
+            
+
+          </div>
+          <br>
+          <h4>position:absolute</h4>
+          <p>
+            An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+            <br>
+            However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+            <br>
+            Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+          </p> <br>
+          <div class="ex">
+            <xmp>
+              div.relative {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid #73AD21;
+              }
+              
+              div.absolute {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid #73AD21;
+              }
+            </xmp>
+          </div>
+          <img src="./media/pos1.png" alt="img3" width="500px" height="300px">
+          <br>
+          <h4>position:fixed</h4>
+          <p>
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+            A fixed element does not leave a gap in the page where it would normally have been located.
+
+            Notice the fixed element in the lower-right corner of the page. 
+          </p>
+          <div class="ex">
+            <xmp>
+              div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                border: 3px solid #73AD21;
+              }
+            </xmp>
+          </div>
+          <br>
+          <h4>position:Sticky</h4>
+          <p>
+            An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+          </p>
+          <div class="ex">
+            div.sticky {
+              position: -webkit-sticky; /* Safari */
+              position: sticky;
+              top: 0;
+              background-color: green;
+              border: 2px solid #4CAF50;
+            }
+          </div>
+          <br>
+          For More Details of <b>Sticky</b> &nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position?v=example">Click Here</a>
+
+
+
+        </section>
+        <section id="unit">
+
+          <h2>&nbsp; CSS Units</h2><hr>
+          <p>
+            CSS has several different units for expressing a length. <br>
+
+            Many CSS properties take "length" values, such as width, margin, padding, font-size, etc. <br>
+
+            Length is a number followed by a length unit, such as 10px, 2em, etc. <br>
+          </p>
+          <div class="ex">
+            <xmp>
+              h1 {
+                font-size: 60px;
+              }
+              
+              p {
+                font-size: 25px;
+                line-height: 50px;
+              }
+            </xmp>
+            
+          </div>
+          <br>
+          <h4>Absolute Lenghts</h4>
+          <br>
+          <table border="2px solid black">
+            <tr>
+              <th>Unit</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>cm</td>
+              <td>centimeter</td>
+            </tr>
+            <tr>
+              <td>mm</td>
+              <td>milimeter</td>
+            </tr>
+            <tr>
+              <td>in</td>
+              <td>inches(1in = 96px)</td>
+            </tr>
+            <tr>
+              <td>px</td>
+              <td>Pixel</td>
+            </tr>
+            <tr>
+              <td>pt</td>
+              <td>Points(1pt=1/72 of in)</td>
+            </tr>
+            <tr>
+              <td>pc</td>
+              <td>picas(1pc=12pt)</td>
+            </tr>
+          </table>
+          <br>
+
+
+          <h4>Relative Leangths</h4>
+          <br>
+          <table border="2px solid black">
+            <tr>
+              <th>Unit</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>em</td>
+              <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+            </tr>
+            <tr>
+              <td>ex</td>
+              <td>Relative to the x-height of the current font (rarely used)</td>
+            </tr>
+            <tr>
+              <td>rem</td>
+              <td>Relative to font-size of the root element.</td>
+            </tr>
+            <tr>
+              <td>vw</td>
+              <td>Relative to 1% of the width of the viewport*</td>
+            </tr>
+            <tr>
+              <td>vh</td>
+              <td>Relative to 1% of the height of the viewport*</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Relative to the parent element</td>
+            </tr>
+          </table>
+
+        </section>
+
+        <section id="ib">
+          <h2>&nbsp; Inline element and Block element
+          </h2>
+          <p>
+            We can apply CSS in a single element by inline CSS technique.
+            <br>
+            The inline CSS is also a method to insert style sheets in HTML document. This method mitigates some advantages of style sheets so it is advised to use this method sparingly.
+            <br>
+            If you want to use inline CSS, you should use the style attribute to the relevant tag.
+          </p>
+          <br>
+          <h4>Disadvatanges Of Inline CSS</h4>
+          <br>
+          <ul>
+            <li>You cannot use quotations within inline CSS. If you use quotations the browser will interpret this as an end of your style value.</li>
+            <li>These styles cannot be reused anywhere else.</li>
+            <li>These styles are tough to be edited because they are not stored at a single place.</li>
+            <li>It is not possible to style pseudo-codes and pseudo-classes with inline CSS.</li>
+            <li>Inline CSS does not provide browser cache advantages.</li>
+          </ul>
+          <br>
+           <p>
+            The elements that begin on a new line are known as block elements. A block element takes up the full width of the content. Unlike inline, there exists a top and bottom margin for these elements. Block-level elements may only appear inside the body tag. Block-level elements create a larger structure than inline elements.
+           </p>
+           <img src="./media/ib.webp" alt="" height="300px" width="400px">
+        </section>
+        <section id="z">
+          <h2>&nbsp; CSS Z-Index</h2><hr>
+          <p>When elements are positioned, they can overlap other elements.
+            <br>
+            The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+          </p>
+          <p>
+            Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+
+
+          </p>
+
+
+        </section>
+        <section id="color">
+          <h2>&nbsp; CSS Color</h2><hr>
+          <br>
+          <h4>
+            RGBA color
+          </h4>
+          <p>
+            RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.
+            <br>
+            An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+          </p>
+          <div class="ex">
+            <xmp>
+              #p1 {background-color: rgba(255, 0, 0, 0.3);}  /* red with opacity */
+              #p2 {background-color: rgba(0, 255, 0, 0.3);}  /* green with opacity */
+              #p3 {background-color: rgba(0, 0, 255, 0.3);}  /* blue with opacity */
+            </xmp>
+          </div>
+          <br>
+          <h4>HSL color</h4>
+          <p>
+            HSL stands for Hue, Saturation and Lightness. <br>
+
+            An HSL color value is specified with: hsl(hue, saturation, lightness). <br>
+
+            1)Hue is a degree on the color wheel (from 0 to 360): <br>
+            0 (or 360) is red <br>
+            120 is greenbr <br>
+            240 is blue <br>
+            2)Saturation is a percentage value: 100% is the full color. <br>
+            3)Lightness is also a percentage; 0% is dark (black) and 100% is white.
+            <br>
+          </p>
+          <div class="ex">
+            <xmp>
+              #p1 {background-color: hsl(120, 100%, 50%);}  /* green */
+              #p2 {background-color: hsl(120, 100%, 75%);}  /* light green */
+              #p3 {background-color: hsl(120, 100%, 25%);}  /* dark green */
+              #p4 {background-color: hsl(120, 60%, 70%);}   /* pastel green */
+            </xmp>
+          </div>
+          <br>
+          <img src="./media/color-CSS-Tutorial-2.jpg" alt="img4" height="300px" width="400px">
+        </section>
+
+
+        <section id="flex">
+          <h2>&nbsp; CSS Flexbox</h2><hr>
+          <p>
+            CSS3 Flexible boxes also known as CSS Flexbox, is a new layout mode in CSS3.
+          </p>
+          <p>
+            The CSS3 flexbox is used to make the elements behave predictably when they are used with different screen sizes and different display devices. It provides a more efficient way to layout, align and distribute space among items in the container.
+          </p>
+          <p>
+            It is mainly used to make CSS3 capable to change its item?s width and height to best fit for all available spaces. It is preferred over block model.
+          </p>
+          <p>
+            The CSS3 flexbox contains flex containers and flex item
+          </p>
+          <br>
+          <h4>Flex container</h4>
+          <p>The flex container specifies the properties of the parent. It is declared by setting the display property of an element to either flex or inline-flex.
+
+          </p>
+          <br>
+          <h4>
+            Flex Items
+          </h4>
+          <p>
+            The flex items specify properties of the children. There may be one or more flex items inside a flex container.
+          </p>
+          <p>
+            Flexbox specifies how flex items are set inside a flex container. It sets the flex items inside a flex container along a flex line. By default, there is only one flex line per flex container. Everything outside a flex container and inside a flex item is considered as usual.
+            <br>
+            Let's take an example to show three flex items within a flex container. By default, they are set along the horizontal flex line, from left to right
+          </p>
+          <br>
+          <table border="2px solid black">
+            <tr>
+              <th>property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>display</td>
+              <td>it is used to specify the type of box used for an html element.</td>
+            </tr>
+            <tr>
+              <td>flex-direction</td>
+              <td>it is used to specify the direction of the flexible items inside a flex container.</td>
+            </tr>
+            <tr>
+              <td>Justify-Content</td>
+              <td>it is used to align the flex items horizontally when the items do not use all available space on the main-axis.</td>
+            </tr>
+            <tr>
+              <td>align-items</td>
+              <td>it is used to align the flex items vertically when the items do not use all available space on the cross-axis.</td>
+            </tr>
+            <tr>
+              <td>flex-wrap</td>
+              <td>it specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</td>
+            </tr>
+            <tr>
+              <td>align-content</td>
+              <td>it is used to modify the behavior of the flex-wrap property. it is similar to align-items, but instead of aligning flex items, it aligns flex lines.</td>
+            </tr>
+            <tr>
+              <td>flex-flow</td>
+              <td>it specifies a shorthand property for flex-direction and flex-wrap.</td>
+            </tr>
+            <tr>
+              <td>order</td>
+              <td>it specifies the order of a flexible item relative to the rest of the flex items inside the same container.</td>
+            </tr>
+            <tr>
+              <td>align-self</td>
+              <td>it is used on flex items. it overrides the container's align-items property.</td>
+            </tr>
+            <tr>
+              <td>flex</td>
+              <td>it specifies the length of a flex item, relative to the rest of the flex items inside the same container.</td>
+            </tr>
+          </table>
+
+        </section>
+
+
+        <section id="grid">
+          <h2>&nbsp; CSS Grid</h2>
+          <p>A grid can be defined as an intersecting set of horizontal lines and vertical lines. CSS Grid layout divides a page into major regions. It defines the relationship between the parts of a control built from HTML primitives in terms of layer, position, and size. Grid property offers a grid-based layout system having rows and columns. It makes the designing of web pages easy without positioning and floating</p>
+          <p>
+            Similar to the table, it enables a user to align the elements into rows and columns. But compare to tables, it is easy to design layout with the CSS grid. We can define columns and rows on the grid by using grid-template-rows and grid-template-columns properties.
+          </p>
+          <p>
+            The CSS grid property is supported in browsers such as Google Chrome, Internet Explorer, Firefox, Safari, and Opera.
+          </p> <br>
+          <h4>Grid Container</h4>
+          
+          <p>We can define the grid container by setting the display property to grid or inline-grid on an element.
+            <br>
+            Grid container contains grid items that are placed inside rows and columns.
+          </p>
+          <div class="ex">
+            <xmp>
+              <style>
+              #main {   
+                display: grid;   
+                grid: auto auto / auto auto auto auto;   
+                grid-gap: 10px;   
+                background-color: black;   
+                padding: 10px;   
+               }  
+              </style> 
+           
+
+              <div id="main">   
+                <div class="num">One</div>   
+                <div class="num">Two</div>   
+                <div class="num">Three</div>      
+                <div class="num">Four</div>   
+                <div class="num">Five</div>   
+                <div class="num">Six</div>   
+                <div class="num">Seven</div>   
+                <div class="num">Eight</div>   
+            </div>   
+            </xmp>
+          </div>
+          <br>
+          Lets see Some shorthand Properties
+          <ul>
+            <li><b>grid-template-columns:</b> It is used to specify the size of the columns.</li>
+            <li><b>grid-template-rows:</b> It is used to specify the row size.</li>
+            <li><b>grid-template-areas:</b> It is used to specify the grid layout by using the named items.</li>
+            <li><b>grid-auto-rows:</b> It is used to specify the automatic size of the rows.</li>
+            <li><b>grid-auto-columns:</b> It is used to specify the automatic size of the columns.</li>
+            <li><b>grid-auto-flow:</b> It is used to specify how to place auto-placed items and the automatic row size.</li>
+          </ul>
+          <br>
+          <h4>The Justify-Content Property</h4>
+          <ul>
+            <li><b>space evenly:</b> It provides equal space in between or around the columns.</li>
+            <li><b>space around:</b> It provides equal space around the columns.</li>
+            <li><b>space between:</b> It gives an equal amount of space between the columns.
+            </li>
+            <li><b>center:</b>  It is used to align the grid in the middle of the container..</li>
+            <li><b>start:</b> It is used to align the grid at the beginning of the container.</li>
+            <li><b>end:</b> It is used to align the grid at the end of the container.</li>
+          </ul>
+
+
+        </section>
+        
+
+
+
+
+
+
+
+
+
+        </main>
+      </header>
+    </div>
+  </body>
+</html>
